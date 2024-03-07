@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.canvas-container {
+  position: relative;
+  background-image: url("../img/pink-art.png");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#arkanoidGameOver {
+  width: 700px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url("../img/giphy.gif");
+  background-size: contain;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.start-button {
+  background-color: #ff82b9;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 30px;
+}
+
+.start-button:hover {
+  background-color: #d63c75;
+}
